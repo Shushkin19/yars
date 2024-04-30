@@ -1,0 +1,18 @@
+#root {
+    display: flex;
+    justify-self: center;
+}
+
+.App {
+    width: auto;
+}
+
+.Note {
+    display: flex;
+    padding: 10px;
+
+    margin-top: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid turquoise;
+    border-radius: 2%;
+}
