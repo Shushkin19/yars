@@ -3,7 +3,7 @@ import './styles/App.css'
 import Post from './components/Post'
 import ButtonYARS from "./components/ui/button/Button";
 import InputYARS from "./components/ui/input/Input";
-
+import NavScrollExample from "./components/ui/navbar/Navbar";
 
 function App() {//qwwwqwqwq
 
@@ -33,6 +33,7 @@ function App() {//qwwwqwqwq
 
   return (
     <div className="App">
+      <NavScrollExample />
       <form>
         <InputYARS ref={inputTitleRef} type='text' placeholder="Post title" />
         <InputYARS ref={inputDescrRef} type='text' placeholder="Post description" />

@@ -5,6 +5,8 @@
 
 .App {
     width: auto;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .Note {
@@ -16,3 +18,4 @@
     border: 5px solid turquoise;
     border-radius: 2%;
 }
+
