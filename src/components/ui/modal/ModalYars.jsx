@@ -1,8 +1,8 @@
 import React from "react";
 import cl from "./ModalYars.module.css";
 
-const Modal = ({ children, visible, setVisible }) => {
-  const rootClasses = [cl.Modal];
+const ModalYars = ({ children, visible, setVisible }) => {
+  const rootClasses = [cl.ModalYars];
 
   if (visible) {
     rootClasses.push(cl.active);
@@ -10,11 +10,11 @@ const Modal = ({ children, visible, setVisible }) => {
 
   return (
     <div className={rootClasses.join(" ")} onClick={() => setVisible(false)}>
-      <div className={cl.ModalContent} onClick={(e) => e.stopPropagation()}>
+      <div className={cl.ModalContentYars} onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
     </div>
   );
 };
 
-export default Modal;
+export default ModalYars;
