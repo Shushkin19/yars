@@ -6,11 +6,20 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function NavScrollExample() {
+//   <form>
+//     <InputYars ref={inputTitleRef} type="text" placeholder="Post title" />
+//     <InputYars
+//       ref={inputDescrRef}
+//       type="text"
+//       placeholder="Post description"
+//     />
+//     <ButtonYars onClick={createPost}> Create post</ButtonYars>
+//   </form>;
+function NavbarYars() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Yars</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -49,4 +58,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default NavbarYars;

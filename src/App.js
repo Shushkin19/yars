@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import './styles/App.css'
-import Post from './components/Post'
-import ButtonYARS from "./components/ui/button/Button";
-import InputYARS from "./components/ui/input/Input";
-import NavScrollExample from "./components/ui/navbar/Navbar";
+import Post from './components/PostYars'
+import ButtonYars from "./components/ui/button/ButtonYars";
+import InputYars from "./components/ui/input/InputYars";
+import NavbarYars from "./components/ui/navbar/NavbarYars";
 
 function App() {//qwwwqwqwq
 
@@ -33,12 +33,7 @@ function App() {//qwwwqwqwq
 
   return (
     <div className="App">
-      <NavScrollExample />
-      <form>
-        <InputYARS ref={inputTitleRef} type='text' placeholder="Post title" />
-        <InputYARS ref={inputDescrRef} type='text' placeholder="Post description" />
-        <ButtonYARS onClick={createPost}> Create post</ButtonYARS>
-      </form>
+      <NavbarYars />
       <Post posts={posts} title="dd" />
     </div >
   );

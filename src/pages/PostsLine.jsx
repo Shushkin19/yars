@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./styles/App.css";
 import Post from "./components/Post";
-import ButtonYARS from "../components/ui/button/Button";
-import InputYARS from "../components/ui/input/Input";
+import ButtonYARS from "../components/ui/button/ButtonYars";
+import InputYARS from "../components/ui/input/InputYars";
 
 function PostsLine() {
   const [posts, setPosts] = useState([

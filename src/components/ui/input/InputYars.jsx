@@ -1,9 +1,9 @@
 import React from "react";
-import classes from "./Input.module.css";
+import classes from "./InputYars.module.css";
 
 //TODO[ashushkin] Create beautiful input
-const InputYARS = React.forwardRef((props, ref) => {
+const InputYars = React.forwardRef((props, ref) => {
   return <input ref={ref} className={classes.inputDefault} {...props} />;
 });
 
-export default InputYARS;
+export default InputYars;
