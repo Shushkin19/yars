@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import ButtonYars from "../button/ButtonYars";
 import Form from "react-bootstrap/Form";
@@ -6,9 +6,6 @@ import Modal from "react-bootstrap/Modal";
 
 function ModalYars({ show, setShow }) {
   const handleClose = () => setShow(false);
-
-  //unusing
-  const handleShow = () => setShow(true);
 
   return (
     <>
