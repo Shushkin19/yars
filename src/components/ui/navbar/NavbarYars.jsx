@@ -8,12 +8,17 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 import ModalYars from "../modal/ModalYars";
 
-function NavbarYars() {
+function NavbarYars({ inputFieldRef, createPost }) {
   const [visible, setVisible] = useState(false);
 
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      <ModalYars show={visible} setShow={setVisible} />
+      <ModalYars
+        show={visible}
+        setShow={setVisible}
+        inputFieldRef={inputFieldRef}
+        createPost={createPost}
+      />
       <Container fluid>
         <Navbar.Brand href="#">Yars</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

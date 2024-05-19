@@ -14,17 +14,19 @@ function App() {
     { id: 4, imageUrl: 'https://img.freepik.com/premium-photo/a-free-photo-of-3d-cute-cat-cartoon-character-design_916107-3043.jpg', title: "111", description: "teetetete", price: "0" }
   ]);
 
-  const inputTitleRef = useRef();
-  const inputDescrRef = useRef();
-  const inputImageRef = useRef();
-  const inputPriceRef = useRef();
+  const inputFieldRef = {
+    inputTitleRef: useRef(),
+    inputDescrRef: useRef(),
+    inputImageRef: useRef(),
+    inputPriceRef: useRef()
+  }
 
   const createPost = (event) => {
     event.preventDefault();
-    let title = inputTitleRef.current.value;
-    let description = inputDescrRef.current.value;
-    let imageUrl = inputImageRef.current.value;
-    let price = inputPriceRef.current.value;
+    let title = inputFieldRef.inputTitleRef.current.value;
+    let description = inputFieldRef.inputDescrRef.current.value;
+    let imageUrl = inputFieldRef.inputImageRef.current.value;
+    let price = inputFieldRef.inputPriceRef.current.value;
 
     const newPost = {
       id: Date.now(),
@@ -38,17 +40,10 @@ function App() {
   };
 
   return (
-      <div className="App">
-        <NavbarYars />
-        <form>
-          <InputYars ref={inputTitleRef} type='text' placeholder="Post title" />
-          <InputYars ref={inputDescrRef} type='text' placeholder="Post description" />
-          <InputYars ref={inputImageRef} type='text' placeholder="Image URL" />
-          <InputYars ref={inputPriceRef} type='text' placeholder="Price" />
-          <ButtonYars onClick={createPost}>Create post</ButtonYars>
-        </form>
-        <PostYars posts={posts} title="Products" />
-      </div>
+    <div className="App">
+      <NavbarYars inputFieldRef={inputFieldRef} createPost={createPost} />
+      <PostYars posts={posts} title="Products" />
+    </div>
   );
 }
 
