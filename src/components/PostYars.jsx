@@ -1,15 +1,37 @@
-import React from "react";
-import Note from "./NoteYars";
+import React from 'react';
+import '../styles/PostYars.css';
 
-const Post = ({ posts, title }) => {
-  return (
-    <div>
-      <h3 style={{ textAlign: "center" }}> {title} </h3>
-      {posts.map((post) => (
-        <Note dictProps={post} key={post.id} />
-      ))}
-    </div>
-  );
+const PostYars = ({ posts, title }) => {
+    const rows = [];
+    for (let i = 0; i < posts.length; i += 4) {
+        rows.push(posts.slice(i, i + 4));
+    }
+
+    return (
+        <div>
+            <h3 style={{ textAlign: 'center' }}>{title}</h3>
+            {
+                rows.map((row, rowIndex) => (
+                    <div className="row" key={rowIndex}>
+                        {row.map(post => <NoteYars dictProps={post} key={post.id} />)}
+                    </div>
+                ))
+            }
+        </div>
+    );
 };
 
-export default Post;
+const NoteYars = ({ dictProps }) => {
+    const { imageUrl, title, description, price } = dictProps;
+
+    return (
+        <div className="card">
+            <img src={imageUrl} alt={title} className="image" />
+            <h4>{title}</h4>
+            <p>{description}</p>
+            <p className="price">{price}₽</p>
+        </div>
+    );
+};
+
+export default PostYars;
