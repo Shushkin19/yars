@@ -5,7 +5,7 @@ import ButtonYARS from "./components/ui/button/Button";
 import InputYARS from "./components/ui/input/Input";
 
 
-function App() {
+function App() {//qwwwqwqwq
 
   const [posts, setPosts] = useState([
     { id: 1, title: "C++", description: "Gagaga" },
