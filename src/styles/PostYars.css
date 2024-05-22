@@ -12,7 +12,7 @@
     margin: 16px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 25%; /* Округляем для равномерного распределения четырех карточек в ряду */
     box-sizing: border-box;
 }
 

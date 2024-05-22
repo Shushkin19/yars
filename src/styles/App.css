@@ -5,12 +5,12 @@
 
 .App {
     width: auto;
-    /* display: flex; */
-    /* justify-content: center; */
+    display: inline-grid;
+    justify-content: center;
 }
 
 .Note {
-    display: flex;
+    /*display: flex;*/
     padding: 10px;
 
     margin-top: 3%;
