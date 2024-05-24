@@ -7,13 +7,13 @@ html, body {
 
 .navbar {
     width: 100%;
-    position: relative; /* Убедитесь, что Navbar находится в потоке документа */
+    position: relative;
+    z-index: 1;
 }
 
-/* Если вам нужно сделать фон Navbar на всю ширину экрана */
 .navbar.bg-body-tertiary {
-    background-color: #f8f9fa; /* или любой другой цвет по вашему выбору */
-    border-bottom: 1px solid #ddd; /* Добавьте нижнюю границу, если нужно */
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
 }
 
 .container-fluid {

@@ -9,7 +9,7 @@ const PostYars = ({ posts, title }) => {
 
     return (
         <div>
-            <h3 style={{ textAlign: 'center' }}>{title}</h3>
+            <h3 style={{ textAlign: 'center', position: 'relative', zIndex: '2' }}>{title}</h3>
             {
                 rows.map((row, rowIndex) => (
                     <div className="row" key={rowIndex}>
@@ -27,11 +27,13 @@ const NoteYars = ({ dictProps }) => {
     return (
         <div className="card">
             <img src={imageUrl} alt={title} className="image" />
-            <h4>{title}</h4>
+            <h4 >{title}</h4>
             <p>{description}</p>
             <p className="price">{price}₽</p>
+            <button className="buy-button">Купить</button> {/* Добавляем кнопку "Купить" */}
         </div>
     );
 };
+
 
 export default PostYars;

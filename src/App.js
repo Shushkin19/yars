@@ -1,17 +1,16 @@
 import React, { useRef, useState } from "react";
 import './styles/App.css'
 import PostYars from './components/PostYars'
-import ButtonYars from "./components/ui/button/ButtonYars";
-import InputYars from "./components/ui/input/InputYars";
 import NavbarYars from "./components/ui/navbar/NavbarYars";
 
 
 function App() {
   const [posts, setPosts] = useState([
-    { id: 1, imageUrl: 'https://lh6.googleusercontent.com/proxy/y9JlQWhTbIVhyne7wkIZfan48yxRYjtSV2m5EidyZe_IsKygJQL9YANMA-MfChQIEQeXCBhBbyxiEGokVMHR0omo0NOfSUxpMmKXdRBZf9G0nPFzujhY6jY', title: "Ford Mustang", description: "For Yulia", price: "0 (for Yulia)" },
-    { id: 2, imageUrl: 'https://images.drive.ru/i/0/5848140aec05c4d675000013.jpg', title: "Dodge Challenger", description: "For Roman", price: "0 (for Roman)" },
-    { id: 3, imageUrl: 'https://logowik.com/content/uploads/images/731_java.jpg', title: "Java", description: "pupupup for Temiiiiiiiik", price: "0" },
-    { id: 4, imageUrl: 'https://img.freepik.com/premium-photo/a-free-photo-of-3d-cute-cat-cartoon-character-design_916107-3043.jpg', title: "111", description: "teetetete", price: "0" }
+    { id: 1, imageUrl: 'https://lh6.googleusercontent.com/proxy/y9JlQWhTbIVhyne7wkIZfan48yxRYjtSV2m5EidyZe_IsKygJQL9YANMA-MfChQIEQeXCBhBbyxiEGokVMHR0omo0NOfSUxpMmKXdRBZf9G0nPFzujhY6jY', title: "Ford Mustang", description: "Ford Mustang Shelby - это легендарный американский спортивный автомобиль, созданный на основе базовой модели Ford Mustang и модифицированный тюнинговой компанией Shelby American. Этот автомобиль прославился благодаря своей агрессивной внешности и высокой производительности.", price: "2 000 000" },
+    { id: 2, imageUrl: 'https://i.gaw.to/content/photos/59/18/591875-dodge-challenger-srt-hellcat-redeye-jailbreak-2023-que-du-muscle.jpeg?1024x640', title: "Dodge Challenger", description: "Dodge Challenger - это американский спортивный автомобиль, который производится компанией Dodge, подразделением Chrysler Group LLC. Представленный в 1970 году, Challenger стал одним из самых узнаваемых и иконичных автомобилей того времени.", price: "3 000 000" },
+    { id: 3, imageUrl: 'https://avatars.mds.yandex.net/get-verba/216201/2a000001673c67e5a251c78daaa2ad46bcc7/cattouchretcr', title: "Chevrolet Camaro", description: "Chevrolet Camaro - знаменитый американский автомобиль, выпускаемый компанией Chevrolet, подразделением General Motors. Первоначально представленный в 1966 году в ответ на появление Ford Mustang, Camaro стал символом американской мощи и стиля.", price: "3 000 000" },
+    { id: 4, imageUrl: 'https://avatars.mds.yandex.net/get-vertis-journal/4466156/DodgeChargerDaytonaSRTConcept.jpeg_1693303890982/orig', title: "Dodge Charger", description: "Dodge Charger - это еще один легендарный американский автомобиль, выпускаемый компанией Dodge, подразделением Chrysler Group LLC. Первоначально представленный в 1966 году, Charger стал одним из наиболее узнаваемых икон автомобильной индустрии.\n" +
+          "\n", price: "2 000 000" }
   ]);
 
   const inputFieldRef = {
@@ -42,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <NavbarYars inputFieldRef={inputFieldRef} createPost={createPost} />
-      <PostYars posts={posts} title="Products" />
+      <PostYars posts={posts} title="Наши автомобили" />
     </div>
   );
 }

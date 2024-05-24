@@ -11,7 +11,7 @@ function ModalYars({ show, setShow, inputFieldRef, createPost }) {
     <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Post creating</Modal.Title>
+          <Modal.Title>Добавить объявление</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -19,11 +19,11 @@ function ModalYars({ show, setShow, inputFieldRef, createPost }) {
               className="mb-3"
               controlId="ModalYarsForm.ControlInput1"
             >
-              <Form.Label>Title</Form.Label>
+              <Form.Label>Название</Form.Label>
               <Form.Control
                 ref={inputFieldRef.inputTitleRef}
                 type="text"
-                placeholder="Post title"
+                placeholder="Названиеe"
                 autoFocus
               />
             </Form.Group>
@@ -31,11 +31,11 @@ function ModalYars({ show, setShow, inputFieldRef, createPost }) {
               className="mb-3"
               controlId="ModalYarsForm.ControlInput1"
             >
-              <Form.Label>Description</Form.Label>
+              <Form.Label>Описание</Form.Label>
               <Form.Control
                 ref={inputFieldRef.inputDescrRef}
                 type="text"
-                placeholder="Post description"
+                placeholder="Описание объявления"
                 autoFocus
               />
             </Form.Group>
@@ -47,7 +47,7 @@ function ModalYars({ show, setShow, inputFieldRef, createPost }) {
               <Form.Control
                 ref={inputFieldRef.inputImageRef}
                 type="text"
-                placeholder="Image URL"
+                placeholder="URL изображения"
                 autoFocus
               />
             </Form.Group>
@@ -55,11 +55,11 @@ function ModalYars({ show, setShow, inputFieldRef, createPost }) {
               className="mb-3"
               controlId="ModalYarsForm.ControlInput1"
             >
-              <Form.Label>Price</Form.Label>
+              <Form.Label>Цена</Form.Label>
               <Form.Control
                 ref={inputFieldRef.inputPriceRef}
                 type="text"
-                placeholder="Price"
+                placeholder="Цена"
                 autoFocus
               />
             </Form.Group>
@@ -67,11 +67,11 @@ function ModalYars({ show, setShow, inputFieldRef, createPost }) {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Закрыть
           </Button>
           {/* TODO[ashushkin] fix this block, need add handleClose! */}
           <ButtonYars variant="primary" onClick={createPost}>
-            Apply
+            Применить
           </ButtonYars>
         </Modal.Footer>
       </Modal>
