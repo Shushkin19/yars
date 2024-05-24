@@ -1,0 +1,22 @@
+/* Убедитесь, что html и body занимают всю ширину и высоту */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    position: relative; /* Убедитесь, что Navbar находится в потоке документа */
+}
+
+/* Если вам нужно сделать фон Navbar на всю ширину экрана */
+.navbar.bg-body-tertiary {
+    background-color: #f8f9fa; /* или любой другой цвет по вашему выбору */
+    border-bottom: 1px solid #ddd; /* Добавьте нижнюю границу, если нужно */
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
