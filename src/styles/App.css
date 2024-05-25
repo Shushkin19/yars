@@ -89,18 +89,11 @@ a {
     font-size: .875rem;
 }
 
-.blank {
-    width: 100%;
-    min-height: 15vh;
-    max-height: 30vh;
-    background-color: gray;
-}
-
 .blankCl {
     width: 100%;
-    min-height: 3vh;
-    max-height: 10vh;
-    background-color: gray;
+    min-height: 1vh;
+    max-height: 3vh;
+    background-color: rgba(128, 128, 128, 0.1);
 }
 
 .second {
