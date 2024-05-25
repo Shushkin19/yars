@@ -3,9 +3,10 @@ import './styles/App.css'
 import PostYars from './components/PostYars'
 import NavbarYars from "./components/ui/navbar/NavbarYars";
 
-
-
 function App() {
+
+  const [catalog, setCatalog] = useState(false);
+
   const [posts, setPosts] = useState([
     { id: 1, imageUrl: 'https://lh6.googleusercontent.com/proxy/y9JlQWhTbIVhyne7wkIZfan48yxRYjtSV2m5EidyZe_IsKygJQL9YANMA-MfChQIEQeXCBhBbyxiEGokVMHR0omo0NOfSUxpMmKXdRBZf9G0nPFzujhY6jY', title: "Ford Mustang", description: "Ford Mustang Shelby - это легендарный американский спортивный автомобиль, созданный на основе базовой модели Ford Mustang и модифицированный тюнинговой компанией Shelby American. Этот автомобиль прославился благодаря своей агрессивной внешности и высокой производительности.", price: "2 000 000" },
     { id: 2, imageUrl: 'https://i.gaw.to/content/photos/59/18/591875-dodge-challenger-srt-hellcat-redeye-jailbreak-2023-que-du-muscle.jpeg?1024x640', title: "Dodge Challenger", description: "Dodge Challenger - это американский спортивный автомобиль, который производится компанией Dodge, подразделением Chrysler Group LLC. Представленный в 1970 году, Challenger стал одним из самых узнаваемых и иконичных автомобилей того времени.", price: "3 000 000" },
@@ -27,7 +28,9 @@ function App() {
     { id: 8, imageUrl: 'https://www.carlogos.org/car-logos/nissan-logo-2020-black-show.png', title: "Nissan" },
     { id: 9, imageUrl: 'https://www.carlogos.org/car-logos/ferrari-logo-2002-640.png', title: "Ferrari" },
     { id: 10, imageUrl: 'https://www.carlogos.org/logo/Land-Rover-logo-2011-640x335.jpg', title: "Land-Rover" },
-  ])
+  ]);
+
+
 
   const inputFieldRef = {
     inputTitleRef: useRef(),
@@ -54,23 +57,58 @@ function App() {
     setPosts([...posts, newPost]);
   };
 
+  const Catalog = () => {
+    return (
+      <div className="catalog">
+        <div className="catalogBlock">
+          <PostYars posts={posts} title="Наши автомобили" />
+        </div>
+        <div class="blankCl"></div>
+        <div className="catalogBlock catalogSecond">
+          <PostYars posts={posts} title="" />
+        </div>
+        <div class="blankCl"></div>
+        <div className="catalogBlock catalogThird">
+          <PostYars posts={posts} title="" />
+        </div>
+        <div class="blankCl"></div>
+      </div>
+    )
+  }
+
+  const startPage = () => {
+    return (
+      <div className="main">
+        <div className="imageBlock">
+          <h1 className="topimageBlock">Yars cars store </h1>
+          <p className="topimageBlock">Yars cars store - это место переплетения шедевров, где каждый может найти и подобрать то самое счастье, которое будет с ним всегда </p>
+        </div>
+        <div class="blank"></div>
+        <div className="imageBlock second">
+          <PostYars posts={posts} title="Наши автомобили" />
+        </div>
+        <div class="blank"></div>
+        <div className="imageBlock third">
+          <PostYars posts={brands} title="BRANDS" />
+        </div>
+        <div class="blank"></div>
+      </div>
+    );
+  }
+
+  const display = () => {
+    console.log(catalog)
+    if (catalog) {
+      return Catalog();
+    } else {
+      return startPage();
+    }
+  }
+
   return (
     <div className="App">
-      <NavbarYars inputFieldRef={inputFieldRef} createPost={createPost} />
-      <div className="imageBlock">
-        <h1 className="topimageBlock">Yars cars store </h1>
-        <p className="topimageBlock">Yars cars store - это место переплетения шедевров, где каждый может найти и подобрать то самое счастье, которое будет с ним всегда </p>
-        <a className="topimageBlock" href="#">Learn more</a>
-      </div>
-      <div class="blank"></div>
-      <div className="imageBlock second">
-        <PostYars posts={posts} title="Наши автомобили" />
-      </div>
-      <div class="blank"></div>
-      <div className="imageBlock third">
-        <PostYars posts={brands} title="BRANDS" />
-      </div>
-      <div class="blank"></div>
+      <NavbarYars inputFieldRef={inputFieldRef} setCatalog={setCatalog} createPost={createPost} />
+      {display()}
 
     </div >
   );

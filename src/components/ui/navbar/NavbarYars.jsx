@@ -5,11 +5,11 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import "../navbar/NavbarYars.module.css"
+import "../navbar/NavbarYars.module.css";
 
 import ModalYars from "../modal/ModalYars";
 
-function NavbarYars({ inputFieldRef, createPost }) {
+function NavbarYars({ inputFieldRef, createPost, setCatalog }) {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -21,7 +21,9 @@ function NavbarYars({ inputFieldRef, createPost }) {
         createPost={createPost}
       />
       <Container fluid>
-        <Navbar.Brand href="#">YARS Cars store</Navbar.Brand>
+        <Navbar.Brand href="#" onClick={() => setCatalog(false)}>
+          YARS Cars store
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -29,12 +31,28 @@ function NavbarYars({ inputFieldRef, createPost }) {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#">Каталог</Nav.Link>
-            <Nav.Link onClick={() => setVisible(true)}>Добавить объявление</Nav.Link>
+            <Nav.Link onClick={() => setCatalog(true)}>Каталог</Nav.Link>
+            <Nav.Link onClick={() => setVisible(true)}>
+              Добавить объявление
+            </Nav.Link>
             <NavDropdown title="Связаться с нами" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="https://github.com/yyyyyliaa">yyyyyliaas GitHub</NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://github.com/yyyyyliaa"
+                target="_blank"
+              >
+                yyyyyliaa's GitHub
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://github.com/Shushkin19"
+                target="_blank"
+              >
+                Shushkin's GitHub
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_morskaya_ulitsa_67/Z0kYdA5mT0IGQFtjfXVzeHllZA==/?ll=30.296671%2C59.929561&z=17.47"
+                target="_blank"
+              >
                 Адрес: Большая Морская ул., 67, Санкт-Петербург
               </NavDropdown.Item>
             </NavDropdown>
