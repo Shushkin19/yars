@@ -1,13 +1,8 @@
+:root {
+    --color: #686868;
+}
+
 body {
-    background-color: #c9f15b;
+    font-family: 'Red Hat Text', sans-serif;
 }
-
-svg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
-
 

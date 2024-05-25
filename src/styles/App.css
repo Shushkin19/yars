@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 
 #root {
@@ -45,6 +46,68 @@ body, html {
     background-color: rgba(255, 255, 255, 0.8); /* Добавляем полупрозрачный фон для лучшей читаемости */
     padding: 8px 16px; /* Добавляем отступы вокруг текста */
     border-radius: 4px; /* Закругляем углы */
+}
+
+.imageBlock {
+    text-align: center;
+    color: var(--color);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../styles/img/4k/mustang.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+}
+
+.blank {
+    width: 100%;
+    min-height: 60vh;
+    max-height: 80vh;
+    background-color: var(--color);
+}
+
+.second {
+    background-image: url("../styles/img/4k/2audi.jpg");
+    background-attachment: fixed;
+    height: 1200px;
+    flex-direction: row;
+    gap: 1.6em;
+}
+
+.third {
+    background-image: url("../styles/img/4k/mustang-light.jpg");
+    background-attachment: fixed;
+    height: 1200px;
+    flex-direction: row;
+    gap: 1.6em;
 }
 
 
