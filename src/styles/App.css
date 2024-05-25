@@ -50,19 +50,21 @@ body, html {
 
 .imageBlock {
     text-align: center;
-    color: var(--color);
-
     min-height: 100vh;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../styles/img/4k/mustang.jpg");
+    background-image: url("../styles/img/4k/gtr.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+.topImageBlock {
+    color: rgb(56, 56, 121);
+}
 h1 {
     font-weight: 700;
     font-size: 3rem;
@@ -91,7 +93,7 @@ a {
     width: 100%;
     min-height: 60vh;
     max-height: 80vh;
-    background-color: var(--color);
+    background-color: gray;
 }
 
 .second {
