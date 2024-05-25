@@ -112,14 +112,14 @@ function App() {
   const [brands] = useState([
     { id: 1, imageUrl: 'https://www.carlogos.org/car-logos/tesla-logo-2007-full-640.png', title: "Tesla" },
     { id: 2, imageUrl: 'https://www.carlogos.org/car-logos/dodge-logo-2010-640.png', title: "Dodge" },
-    { id: 3, imageUrl: 'https://www.carlogos.org/logo/Chevrolet-logo-2013-640x281.jpg', title: "Chevrolet" },
-    { id: 4, imageUrl: 'https://www.carlogos.org/car-logos/mazda-logo-2018-vertical-640.png', title: "Mazda" },
-    { id: 5, imageUrl: 'https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-640x369.jpg', title: "Mercedes-Benz" },
+    { id: 3, imageUrl: 'https://media.chevrolet.com/dld/content/dam/Media/images/INTL/chevrolet/logos/historical-logos/Chevrolet-Logo-269771.jpg', title: "Chevrolet" },
+    { id: 4, imageUrl: 'https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/fff43905f01200a393a6c1611666f603/large.jpg', title: "Mazda" },
+    { id: 5, imageUrl: 'https://fbi.cults3d.com/uploaders/22595999/illustration-file/934f0682-ddfb-4c79-a36a-b7d3b8a937e9/Mercedes-1.jpg', title: "Mercedes-Benz" },
     { id: 6, imageUrl: 'https://www.carlogos.org/car-logos/audi-logo-2016-640.png', title: "Audi" },
     { id: 7, imageUrl: 'https://www.carlogos.org/car-logos/ford-logo-2017-640.png', title: "Ford" },
-    { id: 8, imageUrl: 'https://www.carlogos.org/car-logos/nissan-logo-2020-black-show.png', title: "Nissan" },
+    { id: 8, imageUrl: 'https://mms.businesswire.com/media/20211201006234/en/932313/5/Nissan_brand_white_background_%284%29.jpg', title: "Nissan" },
     { id: 9, imageUrl: 'https://www.carlogos.org/car-logos/ferrari-logo-2002-640.png', title: "Ferrari" },
-    { id: 10, imageUrl: 'https://www.carlogos.org/logo/Land-Rover-logo-2011-640x335.jpg', title: "Land-Rover" },
+    { id: 10, imageUrl: 'https://fbi.cults3d.com/uploaders/15233766/illustration-file/8cbcecd1-d261-4b0e-9f07-6e200a06cfa0/1.jpg', title: "Land-Rover" },
   ]);
 
 
