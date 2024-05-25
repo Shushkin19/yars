@@ -18,7 +18,15 @@ function App() {
 
   const [brands, setBrands] = useState([
     { id: 1, imageUrl: 'https://www.carlogos.org/car-logos/tesla-logo-2007-full-640.png', title: "Tesla" },
-    { id: 2, imageUrl: 'https://www.carlogos.org/car-logos/dodge-logo-2010-640.png', title: "Dodge" }
+    { id: 2, imageUrl: 'https://www.carlogos.org/car-logos/dodge-logo-2010-640.png', title: "Dodge" },
+    { id: 3, imageUrl: 'https://www.carlogos.org/logo/Chevrolet-logo-2013-640x281.jpg', title: "Chevrolet" },
+    { id: 4, imageUrl: 'https://www.carlogos.org/car-logos/mazda-logo-2018-vertical-640.png', title: "Mazda" },
+    { id: 5, imageUrl: 'https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-640x369.jpg', title: "Mercedes-Benz" },
+    { id: 6, imageUrl: 'https://www.carlogos.org/car-logos/audi-logo-2016-640.png', title: "Audi" },
+    { id: 7, imageUrl: 'https://www.carlogos.org/car-logos/ford-logo-2017-640.png', title: "Ford" },
+    { id: 8, imageUrl: 'https://www.carlogos.org/car-logos/nissan-logo-2020-black-show.png', title: "Nissan" },
+    { id: 9, imageUrl: 'https://www.carlogos.org/car-logos/ferrari-logo-2002-640.png', title: "Ferrari" },
+    { id: 10, imageUrl: 'https://www.carlogos.org/logo/Land-Rover-logo-2011-640x335.jpg', title: "Land-Rover" },
   ])
 
   const inputFieldRef = {
