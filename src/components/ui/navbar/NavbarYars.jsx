@@ -48,6 +48,16 @@ function NavbarYars({ inputFieldRef, createPost, setCatalog }) {
               >
                 Shushkin's GitHub
               </NavDropdown.Item>
+              <NavDropdown.Item
+                  target="_blank"
+              >
+                roman's GitHub
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                  target="_blank"
+              >
+                semen's GitHub
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
                 href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_morskaya_ulitsa_67/Z0kYdA5mT0IGQFtjfXVzeHllZA==/?ll=30.296671%2C59.929561&z=17.47"
