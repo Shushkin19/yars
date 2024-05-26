@@ -48,14 +48,10 @@ function NavbarYars({ inputFieldRef, createPost, setCatalog }) {
               >
                 Shushkin's GitHub
               </NavDropdown.Item>
-              <NavDropdown.Item
-                  target="_blank"
-              >
+              <NavDropdown.Item target="_blank">
                 roman's GitHub
               </NavDropdown.Item>
-              <NavDropdown.Item
-                  target="_blank"
-              >
+              <NavDropdown.Item target="_blank">
                 semen's GitHub
               </NavDropdown.Item>
               <NavDropdown.Divider />
@@ -67,15 +63,6 @@ function NavbarYars({ inputFieldRef, createPost, setCatalog }) {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Найти автомобиль"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Поиск</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
